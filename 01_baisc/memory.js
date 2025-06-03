@@ -1,5 +1,6 @@
 
-// premitve ( stack memory ) => copy alocate hota hai , non permitive ( heap ) => refrence alocate hota hai , sidha change memory mai hota hai ...
+// premitve ( stack memory ) => copy alocate hota hai  , non permitive ( heap ) => refrence alocate hota hai , 
+// refrence ke case mai sidha change memory mai hota hai yani mi original value mai ...
 let userName = " Sachin Singh "
 
 let userName2 = userName 
@@ -14,7 +15,8 @@ let userid1 = {
 
 
 }
-
+                //object ke andar access ka tarika dot se hi hota hai 
+// stack mai hume bas copy hi allocate hoti hai 
 let userid2=userid1
 userid2.name="sathak"
 

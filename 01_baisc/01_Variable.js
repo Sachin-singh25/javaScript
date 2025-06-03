@@ -1,4 +1,4 @@
-const accountId = 144553
+const accountId = 144553 /* ye ek baar declare ho gya toh change nhi kr sakte */
 let accountEmail = "hitesh@google.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
@@ -14,8 +14,10 @@ accountCity = 'Bengaluru' //Single aur double coat se farak nhi padta .. tested
 console.log(accountId);
 
 /*
- Alet : A1 Prefer not to use var
-because of issue in block scope and functional scope
+ Alet : { } isi koh scope kahte hai 
+
+var mai scope ki problem thi iss liye aaya let jisme scope wali problem door ho gyi 
+bas itna hi farak hai baaki dono use variable ddclare k liye hi hote hai 
 
 A2 Semi Colan se Fark nhi Padta 
 */

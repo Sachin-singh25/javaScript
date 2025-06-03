@@ -1,4 +1,4 @@
-// Alert points 
+ // Alert points 
 //alert(3+3) is not working here cauz this is node js not a browser 
 
 "use strict " // treat js code as new source 
@@ -22,3 +22,4 @@ Null ek object typed data type hai
 
 */
 
+console.log(typeof null);

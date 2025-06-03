@@ -16,7 +16,7 @@ N4.  null=> 0
 N5.  undefined => NaN
 */
 
-let isLogged_IN = 23    // zero ko chhor k koi bhi aur value loge hamesha true hi ayega
+let isLogged_IN = 23    // zero aur "" empty string ko chhor k koi bhi aur value loge hamesha true hi ayega
 
 let InBoolean_isLogged_IN = Boolean( isLogged_IN)
 //console.log(InBoolean_isLogged_IN);
@@ -32,7 +32,7 @@ Add , Subtract , Multiply , Substraction , and any other work that has been in t
 let str1 ="Hello Sachin "
 let str2 = "Are You There "
 
-//console.log(str1+str2);
+console.log(str1+str2);
 
 
 let Value = 34
@@ -41,4 +41,11 @@ let negValue = -Value
 
 // Additon of string and the number 
 
-console.log("1"+2)  //agar First String mai hai to uske baad sadko string ki trh treat kiya jayega aur agar last mai string hai to pahle number pe operation ho jayega aur last mai string pe kaam ho jayega 
+console.log("1"+2)  //agar First String mai hai to uske baad sadko string ki trh 
+// treat kiya jayega aur agar last mai string hai to pahle number pe operation ho
+//  jayega aur last mai string pe kaam ho jayega 
+console.log(1+"2");
+console.log(1+2+'2');
+console.log('1'+2+2);
+
+

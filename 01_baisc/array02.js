@@ -16,8 +16,11 @@ console.log(all);
 */
 
 console.log(Array.from("Sachin Singh"));
+
+// console.log(Array.from({name:"SAchin"}))              isme sidha object se array bna rahe thai apn , toh isme sidha empty array aata hai kyuki isme pahle batana hota hai ki array kiska banana hai key ka ya object ka 
 score1 = 100;
 score2 = 200;
 score3 = 345;
-console.log(Array.of(score1,score2,score3));
+console.log(Array.of(score1,score2,score3));  // is method mai ek array create hota hai jo jo isme element diya jata hai uske ek value chain se  
 
+// Dekh .flat krke ek operation hota hai jo array ke andar andar array ko ek simple array mai change krta hai 

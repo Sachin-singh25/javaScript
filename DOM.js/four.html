@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Part 4 (The Final Game )</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        .language{
+            text-align: center;
+            
+            color: rgb(137, 183, 223);
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Java script</li>
+        <li>C++</li>
+        <li>Python</li>
+    </ul>
+
+    
+</body>
+<script>
+    function addlanguage(langname){
+      const li =  document.createElement('li'); // list item create kiya hai 
+      li.innerHTML = `${langname}`
+      document.querySelector('.language').
+      appendChild(li)
+    }
+    addlanguage("java")
+    addlanguage("typescript")
+
+    function addoptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendchild('li')
+        
+    }
+    addoptiLanguage('golang')
+
+
+    // Edit krne ka kaam 
+
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "Mojo"
+     const newli = document.createElement("li")
+     newli.textContent = " Mojo "
+     
+
+
+</script>
+</html>

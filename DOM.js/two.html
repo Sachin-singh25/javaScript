@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM : Document Object Model </title>
+    <style>
+        body{
+            background-color: black;  
+            /* idhar jo color dala hai vo upare page ko black kr rha hai */
+                 
+        }
+
+        
+
+        .parent{
+            background-color: black;
+            color: rgb(232, 29, 26);
+            text-align: center;
+            /* idhar jo color dala hai vo sirf div part ko black kr rha hai */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1 style="color: rgb(219, 220, 220);"> <b>Days in a Week </b> </h1>
+
+        <div class="day">Moday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+
+
+    </div>
+    
+</body>
+<script> 
+  const parent =  document.querySelector('.parent')
+  console.log(parent);
+  console.log(parent.children[1].innerHTML);
+//   for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerHTML);
+    
+//   }
+  
+  parent.children[1].style.color='white'
+
+  // bar bar query selector use krne se optimization kam hoti hai .. is liye direct traversing krna theek rahta hai kaafi time
+// Ye Tarika hai without Selector all ke retrive krna data ko
+  const dayOne= document.querySelector('.day')
+// console.log(dayOne);
+// console.log(dayOne.parentElement);
+// console.log(dayOne.nextElementSibling)
+
+
+console.log("NODES:",parent.childNodes);
+
+
+
+
+</script>
+</html>

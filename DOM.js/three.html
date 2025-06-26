@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin's Zone</title>
+    <style>
+        body{
+            background-color: rgb(8, 7, 7);
+        }
+    </style>
+</head>
+<body>
+    <script>
+       const div= document.createElement('div')
+       console.log(div)
+       div.className="Main"
+       div.id = Math.round(Math.random()*10 + 1)
+       div.setAttribute("title","generated title")
+       // ye Simple hai key aur value pair mai mtlb title key aur generated title uski value 
+       div.style.backgroundcolor = " green "
+       div.style.padding="12px"
+    //    div.innerText="scripting in div"
+
+
+      const addText =  document.createTextNode("chai aur code")
+      div.appendChild(addText)
+
+      document.body.appendChild(div)
+    </script>
+    
+</body>
+</html>

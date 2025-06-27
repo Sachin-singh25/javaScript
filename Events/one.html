@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: black;">
+    <div>
+        <ul id="iamges">
+            <li ><img  width = "200px" style="color: rgb(198, 220, 220);" style="display:flex; flex-direction:column;"
+                id ="Dear"src="https://images.pexels.com/photos/32693656/pexels-photo-32693656.jpeg"
+                 alt="Iamge of dear"></li>
+             <li><img width="200px" style="color: antiquewhite; display:flex;"
+                src="https://images.pexels.com/photos/2956511/pexels-photo-2956511.jpeg" alt="Villa "></li>
+
+            <li><img width="500px" aspect-ratio="4/3" style="color: antiquewhite;"src="https://images.pexels.com/photos/51212/pexels-photo-51212.jpeg" alt="my fav"
+                onclick="alert('Aukat Madhar chod Aukat')"></li>
+            <li><a style="color: antiquewhite;"href="https://www.instagram.com/accounts/login/?hl=en" id="Instagram account Access"> Instagram Login</a></li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+   // java script mai chijen sequentialy hi run hoti hai ... (mostly)
+    //document.getElementById('Dear').onclick=function(){
+    //     alert("Dear Clicked")
+     
+    //attachEvent()
+    //jQuery - on  event listner 
+
+    
+
+    document.getElementById('Dear').addEventListener('click', function(e){
+       // console.log(e);
+    },false)
+    // notes 
+    // Padhna kon konsa hai :
+    //  type , timestamp , defaultPrevented
+    // target , toElement , srcElement , currentTarget 
+
+    // clientX , ClientY , ScreenX , ScreenY
+    // altkey, ctrlkey , shiftkey , keyCode
+    
+    // Event Propogation do trh se hote hai event bubbling aur event capturing 
+    // bydefault hum bubbling krte hai (false se  )
+
+document.getElementById('images').addEventListener('click',function(e){
+    console.log('clicked inside the ul')
+
+}. false )
+document.getElementById('Dear').addEventListener('click',function(e){
+    console.log('Dear Clicked')
+
+}. false )
+    
+    
+</script>
+</html>

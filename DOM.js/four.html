@@ -19,8 +19,7 @@
 <body>
     <ul class="language">
         <li>Java script</li>
-        <li>C++</li>
-        <li>Python</li>
+       
     </ul>
 
     
@@ -29,8 +28,7 @@
     function addlanguage(langname){
       const li =  document.createElement('li'); // list item create kiya hai 
       li.innerHTML = `${langname}`
-      document.querySelector('.language').
-      appendChild(li)
+      document.querySelector('.language').appendChild(li)
     }
     addlanguage("java")
     addlanguage("typescript")
@@ -38,18 +36,31 @@
     function addoptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendchild('li')
-        
+        document.querySelector('.language').appendChild(li)
+    
     }
     addoptiLanguage('golang')
 
 
     // Edit krne ka kaam 
 
-    const secondlang = document.querySelector("li:nth-child(2)")
-    // secondlang.innerHTML = "Mojo"
+      const secondlang = document.querySelector("li:nth-child(2)")
+        // console.log(secondlang)
+        // secondlang.innerHTML = "Mojo"
      const newli = document.createElement("li")
      newli.textContent = " Mojo "
+    //  secondlang.replaceWith(newli)
+
+     // edit 
+
+     const firstlang = document.querySelector('li:first-child')
+    //  console.log(firstlang)
+    // firstlang.outerHTML = '<li> Type Script </li>'
+
+    // remove krna 
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
      
 
 

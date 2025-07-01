@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: black;">
     <div>
-        <ul id="iamges">
+        <ul id="images">
             <li ><img  width = "200px" style="color: rgb(198, 220, 220);" style="display:flex; flex-direction:column;"
                 id ="Dear"src="https://images.pexels.com/photos/32693656/pexels-photo-32693656.jpeg"
                  alt="Iamge of dear"></li>
@@ -22,6 +22,7 @@
     
 </body>
 <script>
+    
    // java script mai chijen sequentialy hi run hoti hai ... (mostly)
     //document.getElementById('Dear').onclick=function(){
     //     alert("Dear Clicked")
@@ -34,7 +35,7 @@
     document.getElementById('Dear').addEventListener('click', function(e){
        // console.log(e);
     }.false)
-    // notes 
+    // notes  
     // Padhna kon konsa hai :
     //  type , timestamp , defaultPrevented
     // target , toElement , srcElement , currentTarget 
@@ -43,17 +44,46 @@
     // altkey, ctrlkey , shiftkey , keyCode
     
     // Event Propogation do trh se hote hai event bubbling aur event capturing 
-    // bydefault hum bubbling krte hai (false se  )
-
+    // bydefault hum bubbling krte hai (false se  ) 
+ 
+   // bubbling mai niche se upar ki trf jate hain aur capturing mai upar se niche ki trf 
+/*
 document.getElementById('images').addEventListener('click',function(e){
-    console.log('clicked inside the ul')
+    console.log('clicked inside the ul');
 
-}. false )
+}, false )
 document.getElementById('Dear').addEventListener('click',function(e){
-    console.log('Dear Clicked')
+    console.log('Dear Clicked');
+    e.stopPropagation()
 
-}. false )
+}, false )
+document.getElementById('Instagram account Access').addEventListener('click',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('instagram prevented ');
     
+
+}, false)
+ */
+
+ document.querySelector('#images').addEventListener('click',function(e){
+   // console.log(e.target.parentNode);
+    
+   // let removeimage = e.target.parentNode
+    //removeimage.remove()
+
+    //removeimage.parentNode.removeChild(removeimage)  // naya tarika hai seekh lo 
+
+    console.log(e.target.tagName);
+    if(e.target.tagName=="IMG"){
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+
+
+
+ },false)
+
     
 </script>
 </html>

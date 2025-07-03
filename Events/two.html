@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: antiquewhite;
+        }
+        
+     #submit:hover {
+    background-color: #222;
+    color: rgb(255, 230, 0);
+    box-shadow: 0 0 20px rgb(215, 221, 60);
+
+
+        }
+        #title:hover{
+            text-shadow: 0 0 10px rgb(93, 207, 230),
+               0 0 20px rgb(112, 203, 221),
+               0 0 30px rgb(115, 196, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"> Chai Aur Code </h1>
+    <button id="submit" >submit</button>
+    <button id="start" >start</button>
+</body>
+<script>
+
+    //note : handler , call back , function hai sab same hi kiskia ka naam hai kisi ka nhi hai .. Handler vo function hai jiska naam nhi hota 
+
+/* Note 
+ Date.now() >> isse date formate me koi data aata rahega 
+*/
+    // ye set time ke baad apka ek baar code run kr ke de dega sirf 
+    setTimeout( function (){
+       // console.log('Hitesh sir ');
+        
+    },2000)
+    // ye ek set interval ke baad apne aap ko repeat krta rahega ..
+    setInterval(function() {
+        //console.log("Sachin ke master jii");
+        
+        }, 2000);
+
+    const saymasterji = function(){
+        console.log('Hitesh Sir ');
+        
+    }
+
+    const changetitle = function(){
+    document.querySelector('h1').
+    innerHTML = "Best JS series  "
+    }
+
+    const changeMe=setTimeout(changetitle,2000)
+    
+    document.querySelector('#submit').
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log('stop ho chuka hai naam change hona ');
+        
+    },false)
+
+   
+
+</script>
+</html>
+

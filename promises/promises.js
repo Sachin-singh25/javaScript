@@ -145,3 +145,14 @@ async function getalluser(){
         console.log("E : " ,error);
     }
 }
+
+// .then.catch wala tarika 
+
+fetch ("link ")
+.then(()=>{
+    return reponse.json()
+}).then((data)=>{
+    console.log(data);
+    
+}).catch((error)=>console.log(error)
+)

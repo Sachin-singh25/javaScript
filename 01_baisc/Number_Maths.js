@@ -17,5 +17,5 @@ console.log(num_extra.toLocaleString('en-IN'));  // by default american standard
 
 //+++++++++++++++++++++++  MAths +++++++++++++++++++++
 
-console.log(Math.random());
+console.log(Math.random()); // isse random number generate hota hai 
 console.log(Math.ceil(Math.random()))

@@ -1,6 +1,7 @@
 // aaj padhenge bc Object   
 // symbole declare karna seekha du 
 // literals se object create hoga to singleton nhi banta hai , constructor se banega tohn singleton hi banega 
+// jab object { } iske help se direct banta hai uskp kahte hai object literals aur jab object function k help se banta hai usko kahte h consstructor
 
 const mysymbol = Symbol("key1");
 
